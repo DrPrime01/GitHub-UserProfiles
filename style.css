@@ -1,0 +1,140 @@
+*,
+::after,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+body {
+  box-sizing: inherit;
+  min-height: 100vh;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#container {
+  margin: auto;
+  padding: 2em;
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  gap: 3em;
+  max-width: 1080px;
+}
+
+#container > div {
+  width: 100%;
+}
+
+#form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+#form {
+  display: flex;
+  width: 100%;
+}
+
+#form-divs {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#form-divs > input {
+  flex-grow: 1;
+  border-radius: 0.35em;
+  padding: 0.5em;
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
+}
+
+#form-divs > button {
+  margin-left: 1.5em;
+  padding: 0.5em 2em;
+  border-radius: 0.35em;
+  border: none;
+  background: #b827fc;
+  color: white;
+  font-weight: 600;
+}
+
+#search-result-container {
+  display: flex;
+  padding: 1em;
+}
+
+#img-container {
+  height: 300px;
+  width: 300px;
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
+  margin-right: 3em;
+}
+
+#avatar {
+  max-width: 100%;
+  height: auto;
+}
+
+#user-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#user-info-container > p {
+  margin-bottom: 1.2em;
+  font-size: 1.5rem;
+}
+
+#bio {
+  margin-bottom: 0;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #b827fc;
+}
+
+@media screen and (max-width: 414px) {
+  #search-result-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  #user-info-container {
+    margin-top: 2em;
+  }
+}
