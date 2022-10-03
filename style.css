@@ -79,7 +79,6 @@ body {
 #search-result-container {
   display: flex;
   padding: 1em;
-  overflow: hidden;
 }
 
 #img-container {
@@ -96,6 +95,7 @@ body {
   );
   border-image-slice: 1;
   margin-right: 3em;
+  overflow-y: hidden;
 }
 
 #avatar {
